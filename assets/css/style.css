@@ -404,21 +404,32 @@ body {
   display: grid;
   gap: 30px;
 }
-
 .stats-card {
-  text-align: center;
-  padding: 15px;
+  text-align: left;
+  padding: 20px;
   box-shadow: var(--shadow);
   border-radius: var(--radius-12);
+  width: 500px; /* Explicitly set the width to make it wider */
+  margin: 0 auto; /* Center the card horizontally */
+  min-height: 150px;
 }
 
+@media (max-width: 768px) {
+  .stats-card {
+    width: 90%; /* Use a percentage on smaller screens for responsiveness */
+  }
+}
 .stats-title {
+  text-align: center;
   color: var(--st-patricks-blue);
-  font-size: var(--fs-2);
+  font-size: var(--fs-4);
   font-weight: var(--fw-700);
 }
 
-.stats-text { font-size: var(--fs-8); }
+.stats-text {
+  font-size: var(--fs-8);
+  text-align: left;
+}
 
 
 
