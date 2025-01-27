@@ -73,7 +73,19 @@
             <label for="appointment-date">Vyberte datum první lekce:</label>
             <input type="date" id="appointment-date" name="appointment-date">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+                <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+      <form>
+        <label for="custom-time">Zvolte čas, kdy chcete aby probíhala lekce:</label>
+        <input id="custom-time" type="time" value="00:00" min="00:00" max="23:59">
+      </form>
+
+          <script>
+            $(document).ready(function() {
+              $("#custom-time").clockInput(false);
+            });
+          </script>
+
 
 
             <label for="custom-text">Zpráva</label>
