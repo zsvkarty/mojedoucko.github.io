@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje Doučko</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style2.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">Moje Doučko</a>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Domů</a></li>
+          <li><a href="#about" class="navbar-link">Ceník</a></li>
+          <li><a href="#footer" class="navbar-link">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="btn">Sjednej si doučko!</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <h2 class="hero-title">Sjednání doučka</h2>
+</div>
+        <form action="https://formspree.io/f/xovjelar" method="POST" class="reservation-form">
+          <fieldset>
+            <label for="customer-name">Jméno</label>
+            <input type="text" id="customer-name" name="customer-name" placeholder="Napište celé jméno" required>
+
+            <label for="customer-email">Email</label>
+            <input type="email" id="customer-email" name="customer-email" placeholder="Vložte svoji email adresu" required>
+
+            <label for="customer-phone">Telefonní číslo</label>
+            <input type="tel" id="customer-phone" name="customer-phone" placeholder="Vaše telefonní číslo bez +420" required>
+          </fieldset>
+
+          <fieldset>
+            <label for="lesson-count">Počet lekcí</label>
+            <select id="lesson-count" name="lesson-count" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="1">4</option>
+              <option value="2">5</option>
+              <option value="3">6</option>
+              <option value="1">7</option>
+              <option value="2">8</option>
+              <option value="3">9</option>
+              <option value="1">10</option>
+           
+            </select>
+
+            <label for="appointment-date">Vyberte datum první lekce:</label>
+            <input type="date" id="appointment-date" name="appointment-date">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+            <label for="custom-text">Zpráva</label>
+            <textarea id="custom-text" name="custom-text" placeholder="Pokud máte nějakou žádost, nebo chcete upřesnit datumi zbylých lekcí tak je napište sem (volitelný)"></textarea>
+          </fieldset>
+
+          <fieldset>
+          
+            <button type="submit" class="btn">Poslat žádost</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+
+  <section class="section about" id="about">
+    <div class="container">
+
+      <figure class="about-banner">
+        <img src="./assets/images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner"
+          class="w-100 banner-animation">
+      </figure>
+
+      <div class="about-content">
+
+        <h2 class="h2 section-title underline">Ceník</h2>
+
+        <p class="about-text">
+            Při zakoupení více lekcí prosíme vás o uvedení preferovaných termínů, ve kterých si přejete, aby lekce probíhaly (s výjimkou první lekce).
+        </p>
+
+
+        <ul class="stats-list">
+
+          <li class="stats-card">
+            <p class="h3 stats-title">300,-</p>
+
+            <p class="stats-text">Jedna lekce</p>
+          </li>
+
+          <li class="stats-card">
+            <p class="h3 stats-title">250,-</p>
+
+            <p class="stats-text">5 lekcí</p>
+          </li>
+
+          <li class="stats-card">
+            <p class="h3 stats-title">200,-</p>
+
+            <p class="stats-text">10 lekcí</p>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    
+  </section>
+
+</main>
+  
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Moje Doučko</a>
+
+          <p class="text">
+
+          </p>
+
+         
+
+        </div>
+<!-- 
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Team</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Strategy & Research</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Development</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Solution</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Digital Marketing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">App Design</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Other links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+ 
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Support</a>
+          </li>
+
+        </ul>
+--->
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Kontakt</p>
+          </li>
+
+          <li class="footer-item">
+<!--
+            <div class="footer-item-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:+420 696 696 696" class="footer-item-link">+420 696 696 696</a>
+              
+            </div>
+
+          </li>
+-->
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@dostansenaprava.cz" class="footer-item-link">info@dostansenaprava.cz</a>
+              
+            </div>
+
+          </li>
+<!--
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+
+            <address class="footer-item-link">
+              Nekde v ulici 69
+            </address>
+
+          </li>
+-->
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2025 <a href="#" class="copyright-link">dostansenaprava</a>. All Right Reserved
+      </p>
+    </div>
+
+  </footer>
+ <!-- 
+  <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+ 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+ <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
