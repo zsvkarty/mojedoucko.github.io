@@ -351,8 +351,11 @@ body {
                     url("../images/hero-bg.png"),
                     var(--gradient-1);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: -280px bottom, center, center;
+  background-position: left bottom, center, center;
   background-size: auto, cover, auto;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
   padding-block-start: 120px;
   padding-block-end: var(--section-padding);
 }
