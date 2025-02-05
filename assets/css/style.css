@@ -174,7 +174,7 @@ mark {
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 var(--height);
-  animation: highlight 1200ms 1 cubic-bezier(0.42,0,0.58,1);
+  animation: highlight 1200ms 1 cubic-bezier(0.51, 0.03, 0.64, 0.28);
   animation-fill-mode: forwards;
   animation-play-state: paused; 
 }
