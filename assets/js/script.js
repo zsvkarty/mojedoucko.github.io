@@ -56,6 +56,37 @@ window.addEventListener("scroll", function () {
 });
 
 
+
+//new
+
+document.addEventListener('DOMContentLoaded', function() {
+  const elementsToFade = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);  // Stop observing once faded in
+      }
+    });
+  }, {
+    threshold: 0.2 // Trigger when 20% of the element is visible
+  });
+
+  elementsToFade.forEach(element => {
+    observer.observe(element);
+  });
+});
+
+
+//new
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const testimonialSection = document.querySelector('.testimonial-section');
 
