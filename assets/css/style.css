@@ -161,20 +161,20 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 .highlithg{
-  text-shadow: rgb(0, 0, 0) 1px 0 5px;
- color:rgb(255, 255, 255)
+  
+ color:rgb(0, 0, 0)
  
 }
 mark {
-  --color1: #ffb100;
-  --color2: #ffb100;
+  --color1: #ffff00;
+  --color2: #ffff00;
   --height: 100%;    
   all: unset;
   background-image: linear-gradient(var(--color1), var(--color2));
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 var(--height);
-  animation: highlight 1200ms 1 cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  animation: highlight 1200ms 1 cubic-bezier(0.42, 0, 0.58, 1);
   animation-fill-mode: forwards;
   animation-play-state: paused; 
 }
