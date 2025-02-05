@@ -229,7 +229,7 @@
 
 
       <section class="testimonial-section">
-        <h2 class="testimonial-title testimonial-h2">Recenze <br>od naších <span class="highlight">studentů</span></h2>  <!-- Changed to section-title -->
+        <h2 class="testimonial-title testimonial-h2">Recenze <br>od naších <mark class="highlithg">studentů</mark></h2>  <!-- Changed to section-title -->
         <div class="testimonial-container">
       
           <div class="profile-images-container">
@@ -815,5 +815,26 @@ Nabízíme individuální přístup, přátelské prostředí a zkušené lektor
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
+<script type="text/javascript">
+  (function (window, document) {
+      const markers = document.querySelectorAll('mark');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio > 0) {
+            entry.target.style.animationPlayState = 'running';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.8
+      });
+      
+      markers.forEach(mark => {
+        observer.observe(mark);
+      });
+    })(window, document);
+  
+</script>
 
 </html>
