@@ -1128,8 +1128,7 @@ mark {
 }
 
 /* Section Title Styling */
-.testimonial-title,
-.section-title{
+.testimonial-title{
   font-size: 3.5em; /* Adjust as needed */
   margin-bottom: 30px;
   opacity: 0; /* Initially hide the title */
